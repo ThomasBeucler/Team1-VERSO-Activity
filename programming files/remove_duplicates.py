@@ -1,13 +1,14 @@
 def remove_duplicates(arr):
+    # Initializing
     arr.sort()
     unique_arr = []
     removed_elements = []
     for i in range(len(arr)):
-        if i == 0 or arr[i] != arr[i-1]:
+        if i != 0 or arr[i] != arr[i-1]: # checks the condition for valid array indexes
             unique_arr.append(arr[i])
-        else:
+        else: # removes duplicates
             removed_elements.append(arr[i])
-    return unique_arr, removed_elements
+    return unique_arr
 
 # Test the function
 arr = [1, 2, 2, 3, 4, 4, 5]
