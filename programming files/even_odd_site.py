@@ -1,6 +1,4 @@
 # Bugs introduced: NP
-# Line 4
-# Line 9
 with open("numbers.png", "w") as f:
     f.write("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n")
     f.write("<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n")
