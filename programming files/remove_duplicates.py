@@ -4,7 +4,7 @@ def remove_duplicates(arr):
     unique_arr = []
     removed_elements = []
     for i in range(len(arr)):
-        if i != 0 or arr[i] != arr[i-1]: # checks the condition for valid array indexes
+        if i == 0 or arr[i] != arr[i-1]: # checks the condition for valid array indexes
             unique_arr.append(arr[i])
         else: # removes duplicates
             removed_elements.append(arr[i])
